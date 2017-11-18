@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "algorithms-strucs-csharp", "algorithms-strucs-csharp\algorithms-strucs-csharp.csproj", "{C62CE28E-950A-4BBE-9F67-8DB49BC4CF9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "binary-search", "binary-search\binary-search.csproj", "{EEACF51F-5F87-4696-8C79-EB9ECF0F7D46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linked-list", "linked-list\linked-list.csproj", "{08791D81-8656-43DA-B88F-067B9D20F30D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,5 +17,13 @@ Global
 		{C62CE28E-950A-4BBE-9F67-8DB49BC4CF9F}.Debug|x86.Build.0 = Debug|x86
 		{C62CE28E-950A-4BBE-9F67-8DB49BC4CF9F}.Release|x86.ActiveCfg = Release|x86
 		{C62CE28E-950A-4BBE-9F67-8DB49BC4CF9F}.Release|x86.Build.0 = Release|x86
+		{EEACF51F-5F87-4696-8C79-EB9ECF0F7D46}.Debug|x86.ActiveCfg = Debug|x86
+		{EEACF51F-5F87-4696-8C79-EB9ECF0F7D46}.Debug|x86.Build.0 = Debug|x86
+		{EEACF51F-5F87-4696-8C79-EB9ECF0F7D46}.Release|x86.ActiveCfg = Release|x86
+		{EEACF51F-5F87-4696-8C79-EB9ECF0F7D46}.Release|x86.Build.0 = Release|x86
+		{08791D81-8656-43DA-B88F-067B9D20F30D}.Debug|x86.ActiveCfg = Debug|x86
+		{08791D81-8656-43DA-B88F-067B9D20F30D}.Debug|x86.Build.0 = Debug|x86
+		{08791D81-8656-43DA-B88F-067B9D20F30D}.Release|x86.ActiveCfg = Release|x86
+		{08791D81-8656-43DA-B88F-067B9D20F30D}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal

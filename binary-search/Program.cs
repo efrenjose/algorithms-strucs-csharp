@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace algorithmsstrucscsharp
+namespace binarysearch
 {
-    public class MainClass
+    class MainClass
     {
         public static void Main(string[] args)
         {
