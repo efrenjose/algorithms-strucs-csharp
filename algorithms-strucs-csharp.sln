@@ -1,11 +1,21 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "algorithms-strucs-csharp", "algorithms-strucs-csharp\algorithms-strucs-csharp.csproj", "{C62CE28E-950A-4BBE-9F67-8DB49BC4CF9F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "binary-search", "binary-search\binary-search.csproj", "{EEACF51F-5F87-4696-8C79-EB9ECF0F7D46}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linked-list", "linked-list\linked-list.csproj", "{08791D81-8656-43DA-B88F-067B9D20F30D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "recursion", "recursion\Recursion.csproj", "{390344FE-A325-47E3-830C-C585843C4285}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bubble-sort", "bubble-sort\bubble-sort.csproj", "{136C05DD-A359-42EB-B852-A7258F388C3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Binary Search", "1 - Binary Search", "{D1396FB6-829C-463B-A64F-CA461F86F12B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Linked List", "2 - Linked List", "{2BDCC282-0669-4566-9D3E-B575A419E463}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Recursion", "3 - Recursion", "{939A8D10-05D8-4B5D-9216-7EC08381B2E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Bubble Sort", "4 - Bubble Sort", "{BEDE5039-576D-442C-A999-4F3DF3FC52F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +23,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C62CE28E-950A-4BBE-9F67-8DB49BC4CF9F}.Debug|x86.ActiveCfg = Debug|x86
-		{C62CE28E-950A-4BBE-9F67-8DB49BC4CF9F}.Debug|x86.Build.0 = Debug|x86
-		{C62CE28E-950A-4BBE-9F67-8DB49BC4CF9F}.Release|x86.ActiveCfg = Release|x86
-		{C62CE28E-950A-4BBE-9F67-8DB49BC4CF9F}.Release|x86.Build.0 = Release|x86
 		{EEACF51F-5F87-4696-8C79-EB9ECF0F7D46}.Debug|x86.ActiveCfg = Debug|x86
 		{EEACF51F-5F87-4696-8C79-EB9ECF0F7D46}.Debug|x86.Build.0 = Debug|x86
 		{EEACF51F-5F87-4696-8C79-EB9ECF0F7D46}.Release|x86.ActiveCfg = Release|x86
@@ -25,5 +31,19 @@ Global
 		{08791D81-8656-43DA-B88F-067B9D20F30D}.Debug|x86.Build.0 = Debug|x86
 		{08791D81-8656-43DA-B88F-067B9D20F30D}.Release|x86.ActiveCfg = Release|x86
 		{08791D81-8656-43DA-B88F-067B9D20F30D}.Release|x86.Build.0 = Release|x86
+		{390344FE-A325-47E3-830C-C585843C4285}.Debug|x86.ActiveCfg = Debug|x86
+		{390344FE-A325-47E3-830C-C585843C4285}.Debug|x86.Build.0 = Debug|x86
+		{390344FE-A325-47E3-830C-C585843C4285}.Release|x86.ActiveCfg = Release|x86
+		{390344FE-A325-47E3-830C-C585843C4285}.Release|x86.Build.0 = Release|x86
+		{136C05DD-A359-42EB-B852-A7258F388C3F}.Debug|x86.ActiveCfg = Debug|x86
+		{136C05DD-A359-42EB-B852-A7258F388C3F}.Debug|x86.Build.0 = Debug|x86
+		{136C05DD-A359-42EB-B852-A7258F388C3F}.Release|x86.ActiveCfg = Release|x86
+		{136C05DD-A359-42EB-B852-A7258F388C3F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EEACF51F-5F87-4696-8C79-EB9ECF0F7D46} = {D1396FB6-829C-463B-A64F-CA461F86F12B}
+		{08791D81-8656-43DA-B88F-067B9D20F30D} = {2BDCC282-0669-4566-9D3E-B575A419E463}
+		{390344FE-A325-47E3-830C-C585843C4285} = {939A8D10-05D8-4B5D-9216-7EC08381B2E4}
+		{136C05DD-A359-42EB-B852-A7258F388C3F} = {BEDE5039-576D-442C-A999-4F3DF3FC52F7}
 	EndGlobalSection
 EndGlobal

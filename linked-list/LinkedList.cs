@@ -10,10 +10,10 @@ namespace linkedlist
         public Element Add(Element element)
         {
             var el = element;
-            var currentEl = headValue;
+            var currentEl = this.headValue;
 
             //Empty list
-            if (headValue == null)
+            if (this.headValue == null)
             {
                 this.headValue = el;
                 this.lenght += 1;
@@ -33,5 +33,26 @@ namespace linkedlist
 
             return el;
         }
+
+        public Element SearchElementAt(int position) {
+            var currentEl = this.headValue;
+            var length = this.lenght;
+            var count = 1;
+            var message = "Failure: non-existent node in this list";
+
+            if (length == 0 || position < 1 || position > length)
+            {
+                throw new Exception(message);
+            }
+
+            while (count < position) {
+                currentEl = currentEl.next;
+                count += 1;
+            }
+
+            return currentEl;
+        }
+
+
     }
 }

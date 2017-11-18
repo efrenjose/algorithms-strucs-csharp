@@ -9,12 +9,13 @@ namespace linkedlist
 
             var linkedList = new LinkedList();
 
-
-            for (int i = 0; i < 9; i++)
+            for (int i = 4; i <= 16; i+=4)
             {
-                var el = new Element(i + 1);
+                var el = new Element(i);
                 linkedList.Add(el);
             }
+
+            var elSearched = linkedList.SearchElementAt(100);
         }
     }
 }
