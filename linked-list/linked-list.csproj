@@ -37,6 +37,7 @@
     <Compile Include="Element.cs" />
     <Compile Include="LinkedList.cs" />
     <Compile Include="Stack.cs" />
+    <Compile Include="Queue.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

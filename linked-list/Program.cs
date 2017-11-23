@@ -23,6 +23,12 @@ namespace linkedlist
             stack.Push(new Element(12));
             stack.Pop();
 
+            var queue = new Queue();
+            queue.Enqueue(new Element(4));
+            queue.Enqueue(new Element(8));
+            queue.Enqueue(new Element(12));
+            queue.Dequeue();
+
             //var elSearched = linkedList.SearchElementAt(2);
 
 

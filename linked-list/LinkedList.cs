@@ -112,5 +112,20 @@ namespace linkedlist
 
             this._length--;
         }
+
+        //For queue dequeue
+        public void RemoveHead() {
+
+            Element nodeToDelete = null;
+            Element newHead = null;
+
+            if (_headValue == null)
+                throw new Exception("Queue is empty");
+
+            newHead = this._headValue.next;
+            nodeToDelete = this._headValue;
+            nodeToDelete = null;
+            this._headValue = newHead;
+        }
     }
 }
