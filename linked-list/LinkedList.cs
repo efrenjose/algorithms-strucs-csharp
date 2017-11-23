@@ -102,9 +102,8 @@ namespace linkedlist
 
             Element beforeNodeToDelete = null;
 
-            if (this._length < 1) {
+            if (this._length < 1)
                 throw new Exception("List is empty");
-            }
 
             beforeNodeToDelete = this._topValue.prev;
             beforeNodeToDelete.next = null;
@@ -119,13 +118,15 @@ namespace linkedlist
             Element nodeToDelete = null;
             Element newHead = null;
 
-            if (_headValue == null)
-                throw new Exception("Queue is empty");
+            if (this._length < 1)
+                throw new Exception("List is empty");
 
             newHead = this._headValue.next;
             nodeToDelete = this._headValue;
             nodeToDelete = null;
             this._headValue = newHead;
+
+            this._length--;
         }
     }
 }

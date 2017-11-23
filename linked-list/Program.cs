@@ -15,7 +15,8 @@ namespace linkedlist
                 linkedList.Add(el);
             }
 
-            //linkedList.RemoveAt(3);
+            linkedList.RemoveAt(3);
+            var elSearched = linkedList.SearchElementAt(2);
 
             var stack = new Stack();
             stack.Push(new Element(4));
@@ -28,10 +29,6 @@ namespace linkedlist
             queue.Enqueue(new Element(8));
             queue.Enqueue(new Element(12));
             queue.Dequeue();
-
-            //var elSearched = linkedList.SearchElementAt(2);
-
-
         }
     }
 }
