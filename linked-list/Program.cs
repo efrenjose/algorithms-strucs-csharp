@@ -21,7 +21,7 @@ namespace linkedlist
             //stack.Push(new Element(4));
             //stack.Push(new Element(8));
             //stack.Push(new Element(12));
-            stack.Pop();
+            //stack.Pop();
 
             //var elSearched = linkedList.SearchElementAt(2);
 

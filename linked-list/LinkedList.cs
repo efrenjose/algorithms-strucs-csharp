@@ -6,6 +6,7 @@ namespace linkedlist
 
         int _length;
         Element _headValue;
+        Element _topValue;
 
         public int Length
         {
@@ -21,19 +22,19 @@ namespace linkedlist
             if (this._headValue == null)
             {
                 this._headValue = el;
+                this._topValue = el;
+
                 this._length += 1;
 
                 return el;
             }
 
             //Non-empty list
-            while (currentEl.next != null)
-            {
-                currentEl = currentEl.next;
-            }
-
+            currentEl = this._topValue;
             currentEl.next = el;
+            this._topValue = currentEl.next;
 
+            //Increase length
             this._length += 1;
 
             return el;
@@ -73,6 +74,7 @@ namespace linkedlist
 
             if (position == 1) {
                 this._headValue = currentEl.next;
+                this._topValue = currentEl.next;
                 deletedNode = currentEl;
                 currentEl = null;
                 this._length--;
@@ -88,6 +90,7 @@ namespace linkedlist
             }
 
             beforeNodeToDelete.next = nodeToDelete.next;
+            this._topValue = nodeToDelete.next;
             deletedNode = nodeToDelete;
             nodeToDelete = null;
             this._length--;
