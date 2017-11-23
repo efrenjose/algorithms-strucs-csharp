@@ -18,10 +18,10 @@ namespace linkedlist
             //linkedList.RemoveAt(3);
 
             var stack = new Stack();
-            //stack.Push(new Element(4));
-            //stack.Push(new Element(8));
-            //stack.Push(new Element(12));
-            //stack.Pop();
+            stack.Push(new Element(4));
+            stack.Push(new Element(8));
+            stack.Push(new Element(12));
+            stack.Pop();
 
             //var elSearched = linkedList.SearchElementAt(2);
 

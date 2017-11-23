@@ -18,7 +18,7 @@ namespace linkedlist
         public void Pop() {
             if (_linkedList.Length > 0)
             {
-                _linkedList.RemoveAt(_linkedList.Length);
+                _linkedList.Remove();
                 return;
             }
             throw new Exception("The stack is empty");

@@ -31,6 +31,7 @@ namespace linkedlist
 
             //Non-empty list
             currentEl = this._topValue;
+            el.prev = currentEl;
             currentEl.next = el;
             this._topValue = currentEl.next;
 
@@ -93,6 +94,25 @@ namespace linkedlist
             this._topValue = nodeToDelete.next;
             deletedNode = nodeToDelete;
             nodeToDelete = null;
+            this._length--;
+        }
+
+        //For stack pop
+        public void Remove() {
+
+            Element beforeNodeToDelete = null;
+            Element nodeToDelete = null;
+
+            if (this._length < 1) {
+                throw new Exception("List is empty");
+            }
+
+            beforeNodeToDelete = this._topValue.prev;
+            beforeNodeToDelete.next = null;
+            //nodeToDelete = this._topValue;
+            //nodeToDelete = null;
+            this._topValue = beforeNodeToDelete;
+
             this._length--;
         }
     }
