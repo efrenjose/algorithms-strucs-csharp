@@ -13,6 +13,16 @@ namespace linkedlist
             get { return _length; }
         }
 
+        public Element HeadValue
+        {
+            get { return _headValue; }
+        }
+
+        public Element TopValue
+        {
+            get { return _topValue; }
+        }
+
         public Element Add(Element element)
         {
             var el = element;
@@ -127,6 +137,40 @@ namespace linkedlist
             this._headValue = newHead;
 
             this._length--;
+        }
+
+        public static Element GetNth(LinkedList linkedList, int position)
+        {
+            var currentEl = linkedList.HeadValue;
+            var length = linkedList.Length;
+            var count = 1;
+
+            if (length == 0 || position < 1 || position > length)
+            {
+                throw new Exception("error");
+            }
+
+            while (count < position)
+            {
+                currentEl = currentEl.next;
+                count++;
+            }
+
+            return currentEl;
+        }
+
+        public static Element GetNthToLast(LinkedList linkedList, int position)
+        {
+            var currentEl = linkedList.TopValue.prev;
+            var count = 1;
+
+            while (count < position)
+            {
+                currentEl = currentEl.prev;
+                count++;
+            }
+
+            return currentEl;
         }
     }
 }

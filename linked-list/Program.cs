@@ -15,8 +15,12 @@ namespace linkedlist
                 linkedList.Add(el);
             }
 
-            linkedList.RemoveAt(3);
+            //linkedList.RemoveAt(3);
             var elSearched = linkedList.SearchElementAt(2);
+
+            var nth = LinkedList.GetNth(linkedList, 3);
+            var nthToLast = LinkedList.GetNthToLast(linkedList, 1);
+            nthToLast = LinkedList.GetNthToLast(linkedList, 2);
 
             var stack = new Stack();
             stack.Push(new Element(4));
