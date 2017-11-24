@@ -6,9 +6,15 @@ namespace primegenerator
     {
         public static void Main(string[] args)
         {
+            string output = FindPrimesInRange(20,60);
+            Console.WriteLine(output);
+        }
+
+        public static string FindPrimesInRange(int low, int high)
+        {
             string output = string.Empty;
 
-            for (int i = 2; i < 100; i++)
+            for (int i = low; i < high; i++)
             {
                 for (int j = 2; j <= i; j++)
                 {
@@ -20,8 +26,7 @@ namespace primegenerator
                     }
                 }
             }
-
-            Console.WriteLine(output);
+            return output;
         }
     }
 }
