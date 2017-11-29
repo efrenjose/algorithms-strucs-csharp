@@ -9,7 +9,7 @@ namespace linkedlist
 
             var linkedList = new LinkedList();
 
-            for (int i = 4; i <= 16; i+=4)
+            for (int i = 4; i <= 20; i+=4)
             {
                 var el = new Element(i);
                 linkedList.Add(el);
@@ -21,6 +21,8 @@ namespace linkedlist
             var nth = LinkedList.GetNth(linkedList, 3);
             var nthToLast = LinkedList.GetNthToLast(linkedList, 1);
             nthToLast = LinkedList.GetNthToLast(linkedList, 2);
+            nthToLast = LinkedList.GetNthToLastUsingHeadOnly(linkedList, 1);
+
 
             var stack = new Stack();
             stack.Push(new Element(4));

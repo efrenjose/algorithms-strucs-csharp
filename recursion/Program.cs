@@ -11,7 +11,7 @@ namespace recursion
             //Console.WriteLine(" #" + Fibonacci(number));
 
             //Console.WriteLine(Recursive(3));
-            Console.WriteLine(GetFib(3));
+            //Console.WriteLine(GetFib(3));
             Console.WriteLine(Fibonacci(8));
         }
 
@@ -48,6 +48,7 @@ namespace recursion
 
         public static int Fibonacci(int number)
         {
+            var output = string.Empty;
             if (number <= 1)
             {
                 return 1;

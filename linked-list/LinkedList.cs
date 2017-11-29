@@ -139,26 +139,6 @@ namespace linkedlist
             this._length--;
         }
 
-        public static Element GetNth(LinkedList linkedList, int position)
-        {
-            var currentEl = linkedList.HeadValue;
-            var length = linkedList.Length;
-            var count = 1;
-
-            if (length == 0 || position < 1 || position > length)
-            {
-                throw new Exception("error");
-            }
-
-            while (count < position)
-            {
-                currentEl = currentEl.next;
-                count++;
-            }
-
-            return currentEl;
-        }
-
         public static Element GetNthToLast(LinkedList linkedList, int position)
         {
             var currentEl = linkedList.TopValue.prev;
@@ -168,6 +148,62 @@ namespace linkedlist
             {
                 currentEl = currentEl.prev;
                 count++;
+            }
+
+            return currentEl;
+        }
+
+        public static Element GetNth(LinkedList linkedList, int position)
+        {
+            var currentEl = linkedList.HeadValue;
+            var count = 1;
+
+            //Count the elements in the list
+            while (currentEl.next != null)
+            {
+                currentEl = currentEl.next;
+                count++;
+            }
+
+            if (count == 0 || position < 1 || position > count)
+            {
+                throw new Exception("error");
+            }
+
+            currentEl = linkedList.HeadValue;
+            for (int i = 1; i < position; i++)
+            {
+                currentEl = currentEl.next;
+                count++;
+            }
+
+            return currentEl;
+        }
+
+        public static Element GetNthToLastUsingHeadOnly(LinkedList linkedList, int position)
+        {
+
+            var currentEl = linkedList.HeadValue;
+            var count = 1;
+
+            //Count the elements in the list
+            while (currentEl.next != null)
+            {
+                currentEl = currentEl.next;
+                count++;
+            }
+
+            //Check the the position is not grater that the elements in the array
+            if (position > count - 1)
+            {
+                throw new Exception("position is grater than the elements in the list");
+            }
+
+            //set currenEl to head and do the search
+            currentEl = linkedList.HeadValue;
+            for (int i = 1;  i < count - position; i++)
+            {
+                currentEl = currentEl.next;
             }
 
             return currentEl;
