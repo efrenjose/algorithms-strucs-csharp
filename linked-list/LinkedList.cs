@@ -174,7 +174,6 @@ namespace linkedlist
             for (int i = 1; i < position; i++)
             {
                 currentEl = currentEl.next;
-                count++;
             }
 
             return currentEl;

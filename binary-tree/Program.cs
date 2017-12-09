@@ -60,6 +60,15 @@ namespace binarytree
             set { _root = value; }
         }
 
+        public void PrintPreOrder(Node node)
+        {
+            if (node == null) return;
+
+            Console.WriteLine(node.Key + " ");
+            PrintInOrder(node.Left);
+            PrintInOrder(node.Right);
+        }
+
         public void PrintInOrder(Node node)
         {
             if (node == null) return;
@@ -69,9 +78,28 @@ namespace binarytree
             PrintInOrder(node.Right);
         }
 
+        public void PrintPostOrder(Node node)
+        {
+            if (node == null) return;
+
+            PrintInOrder(node.Left);
+            PrintInOrder(node.Right);
+            Console.WriteLine(node.Key + " ");
+        }
+
+        public void PrintPreOrder()
+        {
+            PrintPreOrder(_root);
+        }
+
         public void PrintInOrder()
         {
             PrintInOrder(_root);
+        }
+
+        public void PrintPostOrder()
+        {
+            PrintPostOrder(_root);
         }
     }
 }

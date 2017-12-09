@@ -19,20 +19,19 @@ namespace bubblesort
 
         public static int[] Bubblesort(int[] array)
         {
-            for (int j = array.Length; j > 0; j--)
+            for (var i = 0; i < array.Length; i++)
             {
-                for (int i = 0; i < array.Length - 1; i++)
+                for (var j = 0; j < array.Length - 1; j++)
                 {
-                    if (array[i] > array[i + 1])
+                    if (array[j] > array[j + 1])
                     {
-                        var left = array[i];
-                        var right = array[i + 1];
-                        array[i] = right;
-                        array[i + 1] = left;
+                        var toRight = array[j];
+                        var toLeft = array[j + 1];
+                        array[j] = toLeft;
+                        array[j + 1] = toRight;
                     }
                 }
             }
-
             return array;
         }
     }
